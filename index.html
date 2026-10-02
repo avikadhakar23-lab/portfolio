@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090a12" />
+    <meta name="description" content="Avika Dhakar is a CSIT engineering student (Class of 2030) and ACM Webmaster building strong foundations in software engineering, algorithms, and web development." />
+    <title>Avika Dhakar — CSIT Student &amp; ACM Webmaster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Avika, home">AV<span>/</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#direction">Direction</a>
+          <a class="nav-cta" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="0" aria-label="Portfolio sections">
+      <section class="hero shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-mark"></span> CSIT STUDENT <span class="eyebrow-divider">·</span> ACM WEBMASTER <span class="eyebrow-divider">·</span> BUILDING &amp; LEARNING</p>
+          <h1 id="hero-title">AVIKA<br /><span class="hero-accent">DHAKAR.</span></h1>
+          <div class="hero-bottom">
+            <div>
+              <p class="hero-role-title">CSIT Student &amp; ACM Webmaster</p>
+              <p class="hero-description">Exploring AI, automation, and web development by building things, breaking things, and figuring out how they work.</p>
+              <div class="hero-skills">
+                <span>AI &amp; Automation</span>
+                <span>n8n</span>
+                <span>AI Agents</span>
+                <span>Web Development</span>
+                <span>Git &amp; GitHub</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-bright" href="#work">Explore Work <span aria-hidden="true">→</span></a>
+              <a class="quiet-link" href="#about">About Me <span aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+        </div>
+        <a class="hero-scroll" href="#work"><span class="scroll-arrow">→</span> SCROLL TO PROJECTS</a>
+        <span class="hero-coordinate" aria-hidden="true">ALWAYS LEARNING</span>
+      </section>
+
+      <section class="work-section section-pad" id="work" aria-labelledby="work-title">
+        <div class="shell">
+          <div class="section-intro work-intro">
+            <div><p class="eyebrow section-kicker">01 / SELECTED WORK</p><h2 class="section-title" id="work-title">Not just ideas.<br /><span class="text-muted">Things in progress.</span></h2></div>
+            <p class="intro-aside">Three real projects. Different problems. One habit: get curious, get hands-on, keep iterating.</p>
+          </div>
+
+          <article class="case-study case-ai" id="ai-lab" aria-labelledby="ai-title">
+            <header class="case-header">
+              <div class="case-index">01 <span>/</span> 03</div>
+              <div class="case-heading"><p class="case-category">AI AUTOMATION <span>·</span> WORKFLOW EXPERIMENTS</p><h3 id="ai-title">AI Automation Lab<span class="title-period">.</span></h3></div>
+              <span class="case-mark case-mark-ai" aria-hidden="true">↗</span>
+            </header>
+            <div class="case-lead-row"><p class="case-one-liner">Practical automation systems exploring how AI can connect apps and take repetitive work off the loop.</p><span class="status-label"><i></i> LEARNING BY BUILDING</span></div>
+
+            <div class="ai-preview preview-frame">
+              <div class="preview-chrome"><div class="chrome-brand"><span class="chrome-icon">a</span><span>FLOW / PLAYGROUND</span></div><span class="chrome-status"><i></i> EXPERIMENTAL</span></div>
+              <div class="flow-layout">
+                <div class="flow-controls">
+                  <p class="micro-label">SELECT A WORKFLOW</p>
+                  <div class="workflow-tabs" role="tablist" aria-label="Automation workflow examples">
+                    <button class="workflow-tab is-active" id="flow-tab-mail" type="button" role="tab" aria-selected="true" aria-controls="workflow-panel" tabindex="0" data-flow="mail"><span>01</span> Inbox → response</button>
+                    <button class="workflow-tab" id="flow-tab-crm" type="button" role="tab" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-flow="crm"><span>02</span> Form → CRM</button>
+                    <button class="workflow-tab" id="flow-tab-calendar" type="button" role="tab" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-flow="calendar"><span>03</span> Calendar → notify</button>
+                    <button class="workflow-tab" id="flow-tab-rag" type="button" role="tab" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-flow="rag"><span>04</span> Document → RAG</button>
+                  </div>
+                  <p class="flow-disclaimer">Examples of workflow patterns explored—not claims of client deployments.</p>
+                </div>
+                <div class="workflow-panel" id="workflow-panel" role="tabpanel" aria-labelledby="flow-tab-mail" tabindex="0">
+                  <div class="flow-panel-heading"><span class="micro-label">WORKFLOW / <span id="flow-code">A01</span></span><span class="flow-active"><i></i> FLOW MAP</span></div>
+                  <p class="workflow-caption" id="workflow-caption">A message arrives. AI helps interpret it; the next step can be reviewed before anything moves.</p>
+                  <div class="workflow-canvas" aria-label="Gmail trigger connects to AI processing, then an optional reviewed response or action">
+                    <div class="flow-line" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="flow-nodes" id="flow-nodes">
+                      <div class="flow-node node-trigger"><span class="node-icon">↘</span><span class="node-type">TRIGGER</span><strong>Gmail</strong></div>
+                      <div class="flow-node node-data"><span class="node-icon">≋</span><span class="node-type">DATA</span><strong>Message</strong></div>
+                      <div class="flow-node node-ai"><span class="node-icon">✳</span><span class="node-type">AI / LOGIC</span><strong>Interpret</strong></div>
+                      <div class="flow-node node-decision"><span class="node-icon">◇</span><span class="node-type">DECISION</span><strong>Review</strong></div>
+                      <div class="flow-node node-action"><span class="node-icon">↗</span><span class="node-type">ACTION</span><strong>Reply / route</strong></div>
+                    </div>
+                  </div>
+                  <div class="flow-footer"><span>CONNECTORS ARE CONCEPTUAL</span><span>TRIGGER <b>→</b> CONTEXT <b>→</b> ACTION</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-details-grid">
+              <div class="detail-block"><span class="micro-label">THE PROBLEM</span><p>Everyday tools hold useful context, but repetitive hand-offs between them can interrupt the work around them.</p></div>
+              <div class="detail-block"><span class="micro-label">THE APPROACH</span><p>Experiment with n8n and AI tools to connect triggers, context, decisions and actions—using webhooks and local setup along the way.</p></div>
+              <div class="detail-block"><span class="micro-label">MY WORK</span><p>Hands-on workflow experiments across inbox, CRM, calendar, notifications and retrieval patterns. Exploratory—not presented as finished products.</p></div>
+            </div>
+            <div class="stack-row"><span class="micro-label">TOOLS EXPLORED</span><div class="chip-list"><span>n8n</span><span>Webhooks</span><span>OpenAI</span><span>ElevenLabs</span><span>Ollama</span><span>Supabase</span><span>RAG / vector stores</span><span>Firecrawl</span><span>MCP tooling</span><span>Google Sheets</span></div></div>
+            <div class="case-endnote"><span>01 / AUTOMATION LAB</span><span>PERSONAL EXPERIMENTS <span class="note-divider">·</span> NO PUBLIC REPOSITORY SHARED</span></div>
+          </article>
+
+          <article class="case-study case-thermo" id="thermoshelter" aria-labelledby="thermo-title">
+            <header class="case-header">
+              <div class="case-index">02 <span>/</span> 03</div>
+              <div class="case-heading"><p class="case-category">CLIMATE TECHNOLOGY <span>·</span> THERMAL SIMULATION</p><h3 id="thermo-title">ThermoShelter<span class="title-period">.</span></h3></div>
+              <span class="case-mark case-mark-thermo" aria-hidden="true">⌁</span>
+            </header>
+            <div class="case-lead-row"><p class="case-one-liner">A software-based model for exploring area-specific shelter design and thermal comfort considerations.</p><span class="status-label status-label-warm"><i></i> RESEARCH MODEL</span></div>
+            <p class="thermo-brief">Software-based thermal analysis model exploring environmental parameters, building material properties, and 24-hour temperature screening curves.</p>
+
+            <div class="thermo-preview preview-frame">
+              <div class="preview-chrome"><div class="chrome-brand"><span class="chrome-icon chrome-icon-climate">⌂</span><span>SHELTRIX / SIMULATION STUDIO</span></div><span class="chrome-status"><i></i> SOURCE-BASED MODEL PREVIEW</span></div>
+              <div class="thermo-preview-body">
+                <div class="model-inputs">
+                  <div class="model-panel-heading"><div><span class="micro-label">01 — MODEL INPUTS</span><h4>Set the temperature range</h4></div><span class="model-badge">LOCAL MODEL</span></div>
+                  <label class="range-control" for="high-temp"><span>Peak day temperature</span><output id="high-temp-output" for="high-temp">25 °C</output><input id="high-temp" type="range" min="-20" max="50" value="25" /></label>
+                  <label class="range-control" for="low-temp"><span>Lowest night temperature</span><output id="low-temp-output" for="low-temp">−10 °C</output><input id="low-temp" type="range" min="-50" max="30" value="-10" /></label>
+                  <label class="range-control range-number" for="wall-depth"><span>Wall thickness <small>0.05–1.00 m</small></span><input id="wall-depth" type="number" min="0.05" max="1" step="0.05" value="0.2" inputmode="decimal" /></label>
+                  <button class="model-run" id="run-model" type="button">Update screening curves <span aria-hidden="true">↗</span></button>
+                  <p class="model-help" id="model-status" aria-live="polite">Showing the prototype’s starting inputs. Change a value, then update the curves.</p>
+                </div>
+                <div class="model-chart-panel">
+                  <div class="chart-heading"><div><span class="micro-label">02 — TEMPERATURE PROFILE</span><h4>24-hour screening curves</h4></div><span class="chart-unit">°C <span>·</span> MODEL OUTPUT</span></div>
+                  <div class="chart-wrap"><svg id="thermal-chart" viewBox="0 0 680 260" role="img" aria-label="24-hour model estimates for mud brick, PUF panel, and PCM material using source-default inputs"></svg></div>
+                  <div class="chart-legend"><span><i class="legend-mud"></i>Mud brick</span><span><i class="legend-puf"></i>PUF panel</span><span><i class="legend-pcm"></i>PCM wall</span></div>
+                  <p class="model-caveat">Prototype heuristic only. Curves are not measured indoor temperatures or whole-building results.</p>
+                </div>
+              </div>
+              <div class="climate-pipeline" aria-label="Project concept from location through thermal comfort evaluation">
+                <span>LOCATION / CLIMATE</span><b aria-hidden="true">→</b><span>SHELTER PARAMETERS</span><b aria-hidden="true">→</b><span>THERMAL ANALYSIS</span><b aria-hidden="true">→</b><span>DESIGN COMPARISON</span>
+              </div>
+            </div>
+
+            <div class="case-details-grid">
+              <div class="detail-block"><span class="micro-label">THE PROBLEM</span><p>A shelter that suits one region’s conditions may not offer the same thermal comfort in another.</p></div>
+              <div class="detail-block"><span class="micro-label">THE APPROACH</span><p>Explore a software model around environmental and material parameters, then compare simple temperature profiles to support early design thinking.</p></div>
+              <div class="detail-block"><span class="micro-label">THE OUTPUT</span><p>The inspected code exposes a material catalog and a 24-hour screening heuristic based on day/night temperatures, wall thickness, conductivity and density.</p></div>
+            </div>
+            <div class="scope-note"><span class="scope-icon" aria-hidden="true">i</span><p><strong>What the current model does not claim:</strong> location or weather-data ingestion, humidity, rainfall, wind or solar analysis; whole-building thermal simulation; scientific validation; or construction-ready recommendations. The repository’s own code notes its limits. Orientation, openings, shading and broader comfort analysis remain design directions—not verified capabilities here.</p></div>
+            <div class="stack-row"><span class="micro-label">VERIFIED PROJECT STACK</span><div class="chip-list"><span>Python</span><span>Flask</span><span>SQLite</span><span>React 19</span><span>Vite</span><span>TypeScript</span><span>Tailwind CSS</span><span>GSAP</span><span>Chart.js</span><span>Three.js</span></div></div>
+            <div class="case-endnote"><span>02 / THERMOSHELTER — SHELTRIX SOURCE</span><span>LOCAL PROJECT FILES <span class="note-divider">·</span> NO PUBLIC DEMO LINK SHARED</span></div>
+          </article>
+
+          <article class="case-study case-prelegal" id="prelegal" aria-labelledby="prelegal-title">
+            <header class="case-header">
+              <div class="case-index">03 <span>/</span> 03</div>
+              <div class="case-heading"><p class="case-category">LEGAL TECHNOLOGY <span>·</span> WEB APPLICATION</p><h3 id="prelegal-title">PreLegal<span class="title-period">.</span></h3></div>
+              <span class="case-mark case-mark-prelegal" aria-hidden="true">§</span>
+            </header>
+            <div class="case-lead-row"><p class="case-one-liner">A software project exploring a structured web workflow for drafting a common Mutual NDA.</p><span class="status-label status-label-violet"><i></i> CONTRIBUTOR</span></div>
+            <div class="prelegal-preview preview-frame">
+              <div class="preview-chrome"><div class="chrome-brand"><span class="chrome-icon chrome-icon-legal">P</span><span>PRELEGAL / PROTOTYPE</span></div><span class="chrome-status"><i></i> UI RECREATION · SOURCE-BASED</span></div>
+              <div class="prelegal-app">
+                <div class="prelegal-sidebar"><div class="prelegal-logo">prelegal<span>.</span></div><span class="prelegal-side-label">WORKSPACE</span><div class="sidebar-item sidebar-current"><span>01</span> Mutual NDA</div><div class="sidebar-item"><span>02</span> Guided questions</div><div class="sidebar-item"><span>03</span> Document preview</div><div class="sidebar-note"><i></i> V1 / prototype</div></div>
+                <div class="prelegal-main"><div class="prelegal-topbar"><span>AGREEMENTS <b>/</b> MUTUAL NDA</span><span class="prelegal-chip"><i></i> DRAFT</span></div><div class="prelegal-columns"><section class="mini-chat" aria-label="Depiction of the application's guided detail collection"><div class="mini-section-head"><div><span class="micro-label">GUIDED DETAILS</span><h4>Draft together</h4></div><span class="chat-count">01 / 17</span></div><div class="mini-message"><span>PRELEGAL ASSISTANT</span><p>What is the purpose of sharing confidential information?</p></div><div class="mini-answer"><span>YOUR RESPONSE</span><div>Evaluating a potential business relationship…</div><button type="button" tabindex="-1" aria-label="Illustrative send button">Send ↗</button></div><p class="mini-note">AI service is optional; a deterministic question flow is the fallback.</p></section><section class="mini-document" aria-label="Depiction of the application's generated document preview"><div class="document-top"><span class="micro-label">LIVE DOCUMENT</span><span>MARKDOWN / PRINT</span></div><div class="paper-sheet"><p class="paper-kicker">COMMON PAPER · VERSION 1.0</p><h4>Mutual Non-Disclosure Agreement</h4><span class="paper-rule"></span><h5>Purpose</h5><p>Evaluating a potential business relationship with the other party.</p><div class="paper-fields"><div><h5>Effective date</h5><span>Cover page field</span></div><div><h5>Governing law</h5><span>Cover page field</span></div></div><div class="paper-signatures"><span>PARTY 1</span><span>PARTY 2</span></div></div></section></div><div class="prelegal-toolbar"><span>STRUCTURED FIELDS <b>→</b> GENERATED MARKDOWN</span><span>INPUTS VALIDATED BEFORE EXPORT</span></div></div>
+              </div>
+              <p class="preview-caption">Interface recreation from the current repository’s React page—not a captured product screenshot.</p>
+            </div>
+
+            <div class="case-details-grid prelegal-details">
+              <div class="detail-block"><span class="micro-label">THE PROBLEM</span><p>Common agreements involve repetitive drafting and collecting structured details from multiple parties.</p></div>
+              <div class="detail-block"><span class="micro-label">THE SOLUTION</span><p>A prototype guides Mutual NDA details through a web interface and reflects the structured values in a document preview.</p></div>
+              <div class="detail-block"><span class="micro-label">MY WORK</span><p>I contributed through task-based frontend development and iteration in an existing codebase—working from requirements, then testing, linting and checking builds.</p></div>
+            </div>
+            <div class="prelegal-flow" aria-label="PreLegal development workflow"><span>REQUIREMENT</span><b>→</b><span>IMPLEMENTATION</span><b>→</b><span>TEST</span><b>→</b><span>LINT</span><b>→</b><span>BUILD</span><b>→</b><span>ITERATE</span></div>
+            <div class="stack-row"><span class="micro-label">VERIFIED REPOSITORY STACK</span><div class="chip-list"><span>Next.js 16</span><span>React 19</span><span>JavaScript</span><span>Node.js</span><span>Node test runner</span><span>ESLint</span><span>Cerebras API route · optional</span></div></div>
+            <p class="prelegal-facts">The repository contains a Mutual NDA field flow, validation, Markdown generation, document preview and browser print/export. Its optional chat endpoint calls Cerebras when configured; the client retains a deterministic fallback. The login screen is explicitly a placeholder, not authentication. No product database or production launch is claimed.</p>
+            <div class="case-endnote"><span>03 / PRELEGAL</span><a href="https://github.com/avikadhakar23-lab/prelegal" target="_blank" rel="noreferrer">VIEW PROJECT SOURCE <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills-section section-pad" id="skills" aria-labelledby="skills-title">
+        <div class="shell">
+          <div class="section-intro">
+            <div>
+              <p class="eyebrow section-kicker">02 / TECHNICAL ARSENAL</p>
+              <h2 class="section-title" id="skills-title">Tools &amp; technologies<br /><span class="text-muted">I build with.</span></h2>
+            </div>
+            <p class="intro-aside">A clear, categorized breakdown of my languages, frameworks, AI automation tools, and developer stack.</p>
+          </div>
+
+          <div class="skills-showcase-grid">
+            <div class="skill-category-card">
+              <div class="skill-card-top">
+                <span class="skill-index-code">01</span>
+                <span class="skill-tag">LANGUAGES</span>
+              </div>
+              <h3>Core Foundations</h3>
+              <p class="skill-desc">Languages I use for algorithms, academic coursework, and application architecture.</p>
+              <div class="skill-badges">
+                <span>Python</span>
+                <span>TypeScript</span>
+                <span>JavaScript (ES6+)</span>
+                <span>C / C++</span>
+                <span>HTML5 / CSS3</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-card-top">
+                <span class="skill-index-code">02</span>
+                <span class="skill-tag">FRONTEND</span>
+              </div>
+              <h3>Web &amp; UI Design</h3>
+              <p class="skill-desc">Designing and engineering responsive, accessible, interactive web interfaces.</p>
+              <div class="skill-badges">
+                <span>React 19</span>
+                <span>Next.js 15</span>
+                <span>Tailwind CSS</span>
+                <span>Vite</span>
+                <span>Semantic HTML</span>
+                <span>CSS Architecture</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-card-top">
+                <span class="skill-index-code">03</span>
+                <span class="skill-tag">INTELLIGENCE</span>
+              </div>
+              <h3>AI &amp; Automation</h3>
+              <p class="skill-desc">Connecting APIs, building autonomous workflows, and experimenting with LLM agents.</p>
+              <div class="skill-badges">
+                <span>n8n Workflows</span>
+                <span>OpenAI APIs</span>
+                <span>Webhooks</span>
+                <span>RAG Concepts</span>
+                <span>Ollama / Local LLMs</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-card-top">
+                <span class="skill-index-code">04</span>
+                <span class="skill-tag">WORKFLOW</span>
+              </div>
+              <h3>Backend &amp; Tooling</h3>
+              <p class="skill-desc">Local development, version control, API testing, and deployment pipelines.</p>
+              <div class="skill-badges">
+                <span>Flask</span>
+                <span>Node.js</span>
+                <span>SQLite</span>
+                <span>Git &amp; GitHub</span>
+                <span>Postman</span>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="about-heading"><p class="eyebrow section-kicker">03 / ABOUT THE BUILDER</p><h2 class="section-title" id="about-title">Early in the journey.<br /><span class="text-muted">Already in the work.</span></h2></div>
+          <div class="about-copy">
+            <p class="about-lede">I’m a CSIT engineering student (Class of 2030) and ACM Webmaster learning by building—connecting core computer science coursework with hands-on systems and real codebases.</p>
+            <p>My technical focus centers on programming fundamentals, C/C++, data structures and algorithms, object-oriented design, and clean web development.</p>
+            <p>I’m driven by intentional problem-solving: understanding the core logic, designing structured code, testing, and continuous iteration.</p>
+            <div class="interest-list">
+              <span>AI &amp; AUTOMATION</span>
+              <span>n8n</span>
+              <span>AI AGENTS</span>
+              <span>WEB DEVELOPMENT</span>
+              <span>DEVELOPER TOOLS</span>
+              <span>GIT &amp; GITHUB</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="direction-section section-pad" id="direction" aria-labelledby="direction-title">
+        <div class="shell">
+          <div class="section-intro direction-intro"><div><p class="eyebrow section-kicker">04 / TECHNICAL JOURNEY</p><h2 class="section-title" id="direction-title">Follow the thread.</h2></div><p class="intro-aside">A direction I’m exploring—not a checklist of things I’ve mastered.</p></div>
+          <ol class="journey-list">
+            <li><span class="journey-index">01</span><span class="journey-label">WEB DEVELOPMENT</span><span class="journey-note">Make a useful interface.</span><span class="journey-arrow" aria-hidden="true">↘</span></li>
+            <li><span class="journey-index">02</span><span class="journey-label">AI AUTOMATION</span><span class="journey-note">Connect tools and tasks.</span><span class="journey-arrow" aria-hidden="true">↘</span></li>
+            <li><span class="journey-index">03</span><span class="journey-label">AI AGENTS</span><span class="journey-note">Experiment with context and action.</span><span class="journey-arrow" aria-hidden="true">↘</span></li>
+            <li><span class="journey-index">04</span><span class="journey-label">INTELLIGENT SYSTEMS</span><span class="journey-note">Keep asking what could fit together.</span><span class="journey-arrow" aria-hidden="true">✳</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="acm-section section-pad" aria-labelledby="acm-title">
+        <div class="shell acm-panel"><div class="acm-symbol" aria-hidden="true">ACM<span>⌁</span></div><div><p class="eyebrow section-kicker">COMMUNITY / COMPUTING</p><h2 id="acm-title">ACM Webmaster</h2><p>Serving as ACM Webmaster, maintaining digital channels, coordinating web assets, and engaging the student developer community.</p></div><span class="acm-side-label">WEBMASTER<br />STUDENT ROLE</span></div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-shell">
+          <div class="contact-header">
+            <div class="contact-header-left">
+              <p class="eyebrow section-kicker">05 / GET IN TOUCH</p>
+              <p class="contact-prelude">Have something worth building?</p>
+              <h2 id="contact-title" class="contact-heading">Let’s build<br /><span>it together.</span></h2>
+            </div>
+            <div class="contact-status-card">
+              <div class="status-indicator-row">
+                <span class="status-beacon" aria-hidden="true">
+                  <span class="beacon-pulse"></span>
+                  <span class="beacon-dot"></span>
+                </span>
+                <span class="status-badge-text">OPEN FOR OPPORTUNITIES</span>
+              </div>
+              <p class="status-pitch">CSIT Undergraduate (Class of 2030) &amp; ACM Webmaster actively seeking <strong>internships</strong>, <strong>collaborative projects</strong>, and <strong>open-source initiatives</strong>.</p>
+              <div class="status-pills">
+                <span class="status-pill"><span class="pill-kicker">LOCATION</span> India · UTC+5:30</span>
+                <span class="status-pill"><span class="pill-kicker">WORK</span> Remote &amp; Worldwide</span>
+                <span class="status-pill"><span class="pill-kicker">RESPONSE</span> &lt; 24h reply</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-main-grid">
+            <div class="contact-focus-column">
+              <span class="micro-label">AREAS OF COLLABORATION &amp; BUILDING</span>
+              <div class="focus-cards-grid">
+                <div class="focus-card">
+                  <div class="focus-card-header">
+                    <span class="focus-icon" aria-hidden="true">⚡</span>
+                    <h4>AI &amp; Automation Workflows</h4>
+                  </div>
+                  <p>Connecting APIs, designing n8n automations, and streamlining developer and business workflows.</p>
+                </div>
+                <div class="focus-card">
+                  <div class="focus-card-header">
+                    <span class="focus-icon" aria-hidden="true">🤖</span>
+                    <h4>AI Agents &amp; Tool Calling</h4>
+                  </div>
+                  <p>Experimenting with autonomous agents, LLM pipelines, context orchestration, and real-world tools.</p>
+                </div>
+                <div class="focus-card">
+                  <div class="focus-card-header">
+                    <span class="focus-icon" aria-hidden="true">💻</span>
+                    <h4>Modern Web &amp; Frontend</h4>
+                  </div>
+                  <p>Building clean, responsive, accessible web interfaces with React, Next.js, and modern CSS.</p>
+                </div>
+                <div class="focus-card">
+                  <div class="focus-card-header">
+                    <span class="focus-icon" aria-hidden="true">🏛️</span>
+                    <h4>ACM &amp; Student Community</h4>
+                  </div>
+                  <p>Coordinating digital web assets, student hackathons, peer learning, and tech community engagement.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-channels-column">
+              <span class="micro-label">DIRECT CONTACT CHANNELS</span>
+              <div class="contact-cards-stack">
+                <!-- Featured Email Card -->
+                <div class="channel-card channel-card-featured">
+                  <div class="channel-card-top">
+                    <div class="channel-badge">
+                      <span class="channel-icon" aria-hidden="true">✉</span>
+                      <span class="channel-name">EMAIL INBOX</span>
+                    </div>
+                    <span class="channel-tag-featured">PRIMARY / FASTEST</span>
+                  </div>
+                  <a class="channel-link-main" href="mailto:avikadhakar23@gmail.com" title="Send email to avikadhakar23@gmail.com">avikadhakar23@gmail.com</a>
+                  <p class="channel-note">Direct line for internships, technical roles, questions, or just saying hello.</p>
+                  <div class="channel-actions">
+                    <a class="channel-btn-primary" href="mailto:avikadhakar23@gmail.com">
+                      <span>Send Email</span>
+                      <span class="btn-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <button class="channel-btn-copy" type="button" data-email="avikadhakar23@gmail.com" aria-label="Copy email address to clipboard">
+                      <span class="copy-text">Copy Address</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <a class="channel-card channel-card-interactive" href="https://www.linkedin.com/in/avika-dhakar-93020b417" target="_blank" rel="noreferrer" aria-label="Connect with Avika Dhakar on LinkedIn">
+                  <div class="channel-card-top">
+                    <div class="channel-badge">
+                      <span class="channel-icon channel-icon-linkedin" aria-hidden="true">in</span>
+                      <span class="channel-name">LINKEDIN</span>
+                    </div>
+                    <span class="channel-cta-pill">Connect <span aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="channel-identity">
+                    <span class="channel-handle">Avika Dhakar</span>
+                    <span class="channel-subtitle">CSIT Student · ACM Webmaster</span>
+                  </div>
+                  <p class="channel-note">Professional updates, networking, and industry connections.</p>
+                </a>
+
+                <!-- GitHub Card -->
+                <a class="channel-card channel-card-interactive" href="https://github.com/avikadhakar23-lab" target="_blank" rel="noreferrer" aria-label="Explore Avika Dhakar's GitHub profile and repositories">
+                  <div class="channel-card-top">
+                    <div class="channel-badge">
+                      <span class="channel-icon channel-icon-github" aria-hidden="true">⌥</span>
+                      <span class="channel-name">GITHUB</span>
+                    </div>
+                    <span class="channel-cta-pill">View Code <span aria-hidden="true">↗</span></span>
+                  </div>
+                  <div class="channel-identity">
+                    <span class="channel-handle">avikadhakar23-lab</span>
+                    <span class="channel-subtitle">Repositories &amp; Prototypes</span>
+                  </div>
+                  <p class="channel-note">Open-source code, active experiments, and project repositories.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer shell"><a class="brand" href="#home" aria-label="Avika, back to top">AV<span>/</span></a><p>AVIKA DHAKAR <span>·</span> CSIT @ 2030 <span>·</span> ACM WEBMASTER</p><a href="#home">BACK TO TOP ↑</a></footer>
+      </section>
+    </main>
+  </body>
+</html>
